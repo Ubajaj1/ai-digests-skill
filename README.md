@@ -1,4 +1,4 @@
-# claude-ai-digests
+# ai-digests
 
 Two Claude Code skills that deliver daily AI digests to your machine.
 

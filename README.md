@@ -28,7 +28,8 @@ Open `~/claude-ai-digests/config.md` and set:
 **3. Copy skills to Claude Code:**
 
 ```bash
-cp ~/claude-ai-digests/skills/*.md ~/.claude/skills/
+cp -r ~/claude-ai-digests/skills/arxiv-digest ~/.claude/skills/
+cp -r ~/claude-ai-digests/skills/github-ai-trending ~/.claude/skills/
 ```
 
 **4. Run in Claude Code:**

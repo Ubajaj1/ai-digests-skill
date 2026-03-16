@@ -96,7 +96,7 @@ Record `selected_count` = count kept after truncation.
 
 You now have at most `filter_size` papers. Read each title and abstract.
 
-Rank them by **practical relevance to working software engineers building with AI**. Ask yourself: "Would an engineer building LLM applications, agents, or AI pipelines care about this paper enough to spend 15 minutes reading it?"
+Rank them by **practical relevance to working software,AI,LLM engineers building with AI**. Ask yourself: "Would an engineer building LLM applications, agents, or AI pipelines care about this paper enough to spend 15 minutes reading it?"
 
 **Rank higher:**
 - New techniques that can be applied without large-scale compute (prompting, inference optimization, fine-tuning approaches)

@@ -1,10 +1,9 @@
 ---
 name: arxiv-digest
-description: Fetch, filter, and summarize recent AI papers from arxiv. Reads config from ~/claude-ai-digests/config.md. Saves a dated markdown digest to output_dir.
+description: Fetch, filter, and summarize recent AI papers from arxiv. Config at ~/.claude/ai-digests/config.md. Saves a dated markdown digest to output_dir.
 ---
 
-> **Config path:** `~/claude-ai-digests/config.md`
-> If you cloned this repo to a different location, update this path in the skill file.
+> **Config:** `~/.claude/ai-digests/config.md` — edit this file to customize categories, results, and output location.
 
 ## Instructions
 
@@ -14,7 +13,7 @@ You are the arxiv-digest skill. Follow every step below in order. Do not skip st
 
 ### Step 1: Read Configuration
 
-Read the file at `~/claude-ai-digests/config.md`.
+Read the file at `~/.claude/ai-digests/config.md`.
 
 Extract from the `## Arxiv Digest` section:
 - `categories` — split on commas, trim whitespace (e.g. `["cs.AI", "cs.LG", "cs.CL"]`)

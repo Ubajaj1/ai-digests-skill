@@ -9,17 +9,20 @@ Output is a dated markdown file saved to a local directory you configure. No API
 
 ## Setup
 
-**1. Clone to your home directory:**
+**1. Clone anywhere:**
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/claude-ai-digests ~/claude-ai-digests
+git clone https://github.com/YOUR_USERNAME/claude-ai-digests
 ```
 
-> If you clone to a different location, update the `> **Config path:**` note at the top of each skill file.
+**2. Install config:**
 
-**2. Edit the config:**
+```bash
+mkdir -p ~/.claude/ai-digests
+cp config.md ~/.claude/ai-digests/
+```
 
-Open `~/claude-ai-digests/config.md` and set:
+Open `~/.claude/ai-digests/config.md` and set:
 - `output_dir` — where digests are saved (default: `~/Documents/ai-digests`)
 - `categories` — arxiv categories you care about (default: `cs.AI, cs.LG, cs.CL`)
 - `topics` — keywords for GitHub filtering (default: `AI, LLM, machine-learning, agents`)
@@ -28,8 +31,8 @@ Open `~/claude-ai-digests/config.md` and set:
 **3. Copy skills to Claude Code:**
 
 ```bash
-cp -r ~/claude-ai-digests/skills/arxiv-digest ~/.claude/skills/
-cp -r ~/claude-ai-digests/skills/github-ai-trending ~/.claude/skills/
+cp -r skills/arxiv-digest ~/.claude/skills/
+cp -r skills/github-ai-trending ~/.claude/skills/
 ```
 
 **4. Run in Claude Code:**

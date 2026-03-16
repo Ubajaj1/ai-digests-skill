@@ -1,10 +1,9 @@
 ---
 name: github-ai-trending
-description: Fetch, filter, and summarize trending AI/ML repos from GitHub. Reads config from ~/claude-ai-digests/config.md. Saves a dated markdown digest to output_dir.
+description: Fetch, filter, and summarize trending AI/ML repos from GitHub. Config at ~/.claude/ai-digests/config.md. Saves a dated markdown digest to output_dir.
 ---
 
-> **Config path:** `~/claude-ai-digests/config.md`
-> If you cloned this repo to a different location, update this path in the skill file.
+> **Config:** `~/.claude/ai-digests/config.md` — edit this file to customize topics, results, and output location.
 
 ## Instructions
 
@@ -14,7 +13,7 @@ You are the github-ai-trending skill. Follow every step below in order. Do not s
 
 ### Step 1: Read Configuration
 
-Read the file at `~/claude-ai-digests/config.md`.
+Read the file at `~/.claude/ai-digests/config.md`.
 
 Extract from the `## GitHub Trending` section:
 - `topics` — split on commas, trim whitespace (e.g. `["AI", "LLM", "machine-learning", "agents"]`)
